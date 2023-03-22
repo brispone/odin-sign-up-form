@@ -58,6 +58,6 @@ img {
     color: white;
 }
 
-#top-blurb {
+#top-blurb, #bottom-blurb {
     background-color: lightgray;
 }

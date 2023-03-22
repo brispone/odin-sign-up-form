@@ -26,7 +26,7 @@
             <p>You <em>know</em> you want to.</p>
         </div>
 
-        <form>
+        <form id="user-info-form">
             <label for="first_name">FIRST NAME</label>
             <input type="text" id="first_name">
 
@@ -45,6 +45,11 @@
             <label for="user_password">CONFIRM PASSWORD</label>
             <input type="password" id="user_password" name="password">
         </form>
+
+        <div id="bottom-blurb">
+            <button type="submit" form="user-info-form">Create Account</button>
+            <p>Already have an account? <a href="">Log in</a></p>
+        </div>
     </div>
 </div>
 </body>

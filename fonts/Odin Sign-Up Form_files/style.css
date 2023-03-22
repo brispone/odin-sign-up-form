@@ -49,13 +49,7 @@ img {
 #credit-text {
     color: white;
     position: absolute;
-    bottom: 1%;
-    right: 1%;
-    font-size: 0.9rem;
-}
-
-#credit-text a {
-    color: white;
+    bottom: 20px;
 }
 
 #top-blurb {

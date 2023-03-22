@@ -1,0 +1,13 @@
+#main-container {
+    display: flex;
+}
+
+#left-container {
+    flex: 0;
+    width:30%;
+    height: 100%;
+}
+
+img {
+    width: 50%;
+}

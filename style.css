@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Zeyada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Roboto&display=swap');
 
 :root {
     --button-color: #339966;
@@ -14,7 +14,7 @@ body {
 
 #left-container {
     flex: auto;
-    width: 50%;
+    width: 30%;
     position: relative;
 }
 
@@ -31,16 +31,16 @@ img {
 
 #logo-container {
     position: absolute;
-    top: 200px;
+    top: 150px;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Zeyada';
+    font-family: 'Cabin Sketch';
     font-size: 200px;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
-    height: 300px;
+    height: 200px;
     width: 100%;
     box-sizing: border-box;
 }
@@ -73,12 +73,23 @@ img {
 
 #top-blurb {
     font-size: 23px;
+    padding-top: 15%;
+    padding-right: 25%;
 }
 
 form {
     padding: 3%;
+    padding-bottom: 5%;
     background-color: white;
     box-shadow: 1px 3px 10px -5px black;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row-gap: 10%;
+    grid-column-gap: 5%;
+    justify-content: start;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
 input, label {

@@ -158,3 +158,9 @@ button:hover {
     color: white;
     transition: 0.3s;
 }
+
+#pass-error-message {
+    color: rgba(153, 51, 51, 1);
+    font-size: 0.7rem;
+    transition: 0.3s;
+}

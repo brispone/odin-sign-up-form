@@ -1,9 +1,8 @@
-@font-face {
-    font-family: tilt-neon;
-    src: url(./fonts/static/TiltNeon-Regular.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Zeyada&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root {
+    --button-color: #339966;
+}
 
 #main-container {
     display: flex;
@@ -32,7 +31,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: tilt-neon;
+    font-family: 'Zeyada';
     font-size: 200px;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
@@ -62,21 +61,21 @@ img {
 }
 
 #top-blurb, #bottom-blurb {
-    background-color: lightgray;
+    background-color: #e6e6ff;
     padding: 2%;
+    font-weight: bolder;
 }
 
 #top-blurb {
     font-size: 23px;
-    font-weight: bolder;
 }
 
 
 button {
     background-color: white;
-    border: 1px solid green;
+    border: 2px solid var(--button-color);
     border-radius: 10px;
-    color: green;
+    color: var(--button-color);
     padding: 1% 4% 1% 4%;
     font-weight: bold;
     font-size: 1rem;
@@ -85,7 +84,7 @@ button {
 }
 
 button:hover {
-    background-color: green;
+    background-color: var(--button-color);
     color: white;
     transition: 0.3s;
 }

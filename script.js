@@ -1,7 +1,8 @@
+const password = document.querySelector("#password");
+const confirmPassword = document.querySelector("#confirm-password");
+const messageText = document.querySelector("#pass-error-message");
+
 document.querySelector("#user-info-form").addEventListener("submit", function(event) {
-    const password = document.querySelector("#password");
-    const confirmPassword = document.querySelector("#confirm-password");
-    const messageText = document.querySelector("#pass-error-message");
 
     if (password.value != confirmPassword.value) {
         messageText.innerText = "PASSWORDS DO NOT MATCH";
@@ -13,12 +14,14 @@ document.querySelector("#user-info-form").addEventListener("submit", function(ev
     }
 });
 
-document.querySelector("#password").addEventListener("input", function() {
-    this.setCustomValidity("");
-    document.querySelector("#pass-error-message").innerText = "";
+password.addEventListener("input", function() {
+    password.setCustomValidity("");
+    confirmPassword.setCustomValidity("");
+    messageText.innerText = "";
 });
 
-document.querySelector("#confirm-password").addEventListener("input", function() {
-    this.setCustomValidity("");
-    document.querySelector("#pass-error-message").innerText = "";
+confirmPassword.addEventListener("input", function() {
+    password.setCustomValidity("");
+    confirmPassword.setCustomValidity("");
+    messageText.innerText = "";
 });

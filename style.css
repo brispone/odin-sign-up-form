@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Roboto&display=swap');
 
 :root {
-    --button-color: #339966;
+    --button-color: darkslategrey;
 }
 
 body {
@@ -22,7 +22,7 @@ body {
     flex: auto;
     width: 50%;
     font-family: 'Roboto', sans-serif;
-    background-color: #e6e6ff;
+    background-color: #f2f2f2;
 }
 
 img {
@@ -90,10 +90,50 @@ form {
     font-size: 0.8rem;
     font-weight: bold;
     letter-spacing: 2px;
+    box-sizing: border-box;
 }
 
 input, label {
     display: block;
+}
+
+label {
+    color: darkslategray;
+}
+
+input:focus:valid {
+    outline: none;
+    border: 2px solid rgba(51, 153, 102, 0.5);
+}
+
+input:focus:invalid {
+    outline: none;
+    border: 2px solid rgba(153, 51, 51, 0.5);
+}
+
+input {
+    margin-top: 5px;
+    width: 295px;
+    height: 25px;
+    border: 2px solid darkslategray;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+input:not(:focus):valid:not(:placeholder-shown) {
+    border-color: rgba(51, 153, 102, 1);
+    background-color: rgba(51, 153, 102, 0.1);
+}
+
+input:not(:focus):invalid:not(:placeholder-shown) {
+    border-color: rgba(153, 51, 51, 1);
+    background-color: rgba(153, 51, 51, 0.1);
+}
+
+input:placeholder-shown {
+    border-color: darkslategray;
 }
 
 button {

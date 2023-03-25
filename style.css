@@ -127,7 +127,7 @@ input:focus:invalid {
 
 input {
     margin-top: 5px;
-    width: 295px;
+    width: 16vw;
     height: 25px;
     border: 2px solid darkslategray;
     border-radius: 5px;
